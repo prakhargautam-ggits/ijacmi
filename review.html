@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peer Review — IJACMI</title>
+<meta name="description" content="The double-blind peer review process used by IJACMI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a href="index.html" class="mark">IJACMI</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html" aria-current="page">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="banner">
+  <div class="wrap">
+    <p class="bk">Peer review</p>
+    <h1>How your paper is handled</h1>
+    <p class="sub">Double-blind review, at least two independent reviewers, and a decision in six to eight weeks.</p>
+  </div>
+</header>
+
+<main>
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Process</span>
+      <h2 class="sec-head">From submission to decision</h2>
+      <ol class="steps">
+        <li><b>Editorial screening</b><span>Within one week. Checked for scope,
+          format and similarity. Papers outside our scope are declined quickly,
+          so you lose no time before submitting elsewhere.</span></li>
+        <li><b>Reviewer assignment</b><span>The handling editor selects at least
+          two independent reviewers, neither from the author's institution and
+          neither with a recent collaboration with any author.</span></li>
+        <li><b>Double-blind review</b><span>Reviewers do not see author
+          identities, and authors do not see reviewer identities. Reviewers are
+          asked for a written assessment, not a score alone.</span></li>
+        <li><b>Decision</b><span>Six to eight weeks from submission &mdash;
+          accept, minor revision, major revision or reject, with the full
+          reviewer comments passed to you unedited.</span></li>
+        <li><b>Revision</b><span>Four weeks for minor revision, eight for major.
+          Revised manuscripts return to the original reviewers wherever
+          possible.</span></li>
+        <li><b>Publication</b><span>Within three weeks of final acceptance. Your
+          DOI is reserved before typesetting and printed on the article
+          itself.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Safeguards</span>
+      <h2 class="sec-head">Conflicts and appeals</h2>
+      <p>Members of the Editorial Board are not exempt from review. Any
+        manuscript submitted by an editor is handled entirely by a different
+        editor, with no access to reviewer identities at any stage. The
+        Editor-in-Chief does not handle their own submissions.</p>
+      <p>If you believe a decision rested on a factual error or a
+        misunderstanding of your work, write to the editorial address within
+        three weeks setting out the specific point. Appeals are read by an
+        editor who was not involved in the original decision. We will not
+        reconsider a decision on the grounds of disagreement alone.</p>
+      <div class="note">
+        <p>Reviewers are asked to declare any conflict before accepting an
+          assignment, and to decline if they cannot assess the work
+          impartially.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footnav">
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="fmark">IJACMI</p>
+    <p>
+      International Journal of Advanced Computing and Machine Intelligence<br>
+      Published by WhiteField Academic Press, an imprint of Whitefield Research
+      and Innovation, Noida, India<br>
+      Content licensed <a href="https://creativecommons.org/licenses/by/4.0/"
+      rel="noopener">CC BY 4.0</a> &middot; Authors retain copyright<br><br>
+      <strong style="color: #E7CE7A;">For any queries:</strong> <a href="mailto:ijacmi@gmail.com">ijacmi@gmail.com</a> | <a href="mailto:whitefieldresearch@gmail.com">whitefieldresearch@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in');});return;
+  }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{rootMargin:'0px 0px -60px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aims and Scope — IJACMI</title>
+<meta name="description" content="What the International Journal of Advanced Computing and Machine Intelligence publishes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a href="index.html" class="mark">IJACMI</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="banner">
+  <div class="wrap">
+    <p class="bk">About the journal</p>
+    <h1>Aims and scope</h1>
+    <p class="sub">What IJACMI publishes, and the kind of paper we are trying to attract.</p>
+  </div>
+</header>
+
+<main>
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Scope</span>
+      <h2 class="sec-head">What we publish</h2>
+      <p class="dropcap">IJACMI publishes original research in advanced computing
+        and machine intelligence. We are interested in new methods, but we are
+        just as interested in the far less glamorous work of establishing
+        whether a method survives contact with data it was never tuned on.</p>
+      <p>We actively welcome negative results, replication studies, and papers
+        reporting where a well-known approach fails. A field that publishes only
+        improvements is not measuring anything. A modest gain reported honestly,
+        with proper baselines and a real error analysis, is worth more to us
+        than a large gain we cannot account for.</p>
+      <p>The journal is deliberately narrow. We would rather be the right home
+        for a defined body of work than a general repository for anything
+        computational.</p>
+      <ul class="topics">
+        <li>Machine learning</li>
+        <li>Deep learning</li>
+        <li>Natural language processing</li>
+        <li>Computer vision</li>
+        <li>Speech and multimodal systems</li>
+        <li>Low-resource and Indic languages</li>
+        <li>Graph representation learning</li>
+        <li>Explainability and evaluation</li>
+        <li>Intelligent and autonomous systems</li>
+        <li>Applied AI &mdash; health, agriculture, education</li>
+        <li>Efficient and edge computing</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Article types</span>
+      <h2 class="sec-head">What you can send us</h2>
+      <div class="panels">
+        <div>
+          <h3>Research article</h3>
+          <p>Original work with a clear contribution, full experimental detail
+             and reproducible evaluation. Six to fifteen pages.</p>
+        </div>
+        <div>
+          <h3>Replication study</h3>
+          <p>An independent attempt to reproduce published results, whether or
+             not it succeeds. We treat these as first-class contributions.</p>
+        </div>
+        <div>
+          <h3>Negative result</h3>
+          <p>A well-designed approach that did not work, with enough analysis to
+             tell the reader why. Rigour matters more than outcome.</p>
+        </div>
+        <div>
+          <h3>Review article</h3>
+          <p>A critical survey that organises a field and identifies open
+             problems. Not a summary of abstracts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Publisher</span>
+      <h2 class="sec-head">About WhiteField Academic Press</h2>
+      <p>WhiteField Academic Press is the academic imprint of Whitefield
+        Research and Innovation, based in Noida, India. The
+        press publishes edited volumes and peer-reviewed research in computing
+        and allied fields.</p>
+      <p>The publisher has no role in editorial decisions. Acceptance and
+        rejection rest entirely with the Editor-in-Chief and the Editorial
+        Board.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footnav">
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="fmark">IJACMI</p>
+    <p>
+      International Journal of Advanced Computing and Machine Intelligence<br>
+      Published by WhiteField Academic Press, an imprint of Whitefield Research
+      and Innovation, Noida, India<br>
+      Content licensed <a href="https://creativecommons.org/licenses/by/4.0/"
+      rel="noopener">CC BY 4.0</a> &middot; Authors retain copyright<br><br>
+      <strong style="color: #E7CE7A;">For any queries:</strong> <a href="mailto:ijacmi@gmail.com">ijacmi@gmail.com</a> | <a href="mailto:whitefieldresearch@gmail.com">whitefieldresearch@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in');});return;
+  }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{rootMargin:'0px 0px -60px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+
+</body>
+</html>

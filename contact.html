@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — IJACMI</title>
+<meta name="description" content="Contact details for the editorial office and publisher of IJACMI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a href="index.html" class="mark">IJACMI</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="banner">
+  <div class="wrap">
+    <p class="bk">Contact</p>
+    <h1>Publisher and editorial office</h1>
+  </div>
+</header>
+
+<main>
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Address</span>
+      <h2 class="sec-head">Where to find us</h2>
+      <address class="addr">
+        <span class="lbl">Imprint</span> WhiteField Academic Press<br>
+        <span class="lbl">Publisher</span> Whitefield Research and Innovation<br>
+        <span class="lbl">Address</span> 522 Galaxy Royale Gaur City 2<br>
+        <span class="lbl"></span> Noida, Uttar Pradesh 201301, India<br>
+        <span class="lbl">Email</span> <a href="mailto:ijacmi@gmail.com">ijacmi@gmail.com</a><br>
+        <span class="lbl">Telephone</span> (+91)9329590295
+      </address>
+      <p>For questions about a manuscript under review, write to the editorial
+        address quoting your submission reference. We aim to reply within three
+        working days.</p>
+      <p>For anything concerning charges, rights or permissions, see
+        <a href="policies.html">Policies</a> first &mdash; most questions are
+        answered there.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footnav">
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="fmark">IJACMI</p>
+    <p>
+      International Journal of Advanced Computing and Machine Intelligence<br>
+      Published by WhiteField Academic Press, an imprint of Whitefield Research
+      and Innovation, Noida, India<br>
+      Content licensed <a href="https://creativecommons.org/licenses/by/4.0/"
+      rel="noopener">CC BY 4.0</a> &middot; Authors retain copyright<br><br>
+      <strong style="color: #E7CE7A;">For any queries:</strong> <a href="mailto:ijacmi@gmail.com">ijacmi@gmail.com</a> | <a href="mailto:whitefieldresearch@gmail.com">whitefieldresearch@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in');});return;
+  }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{rootMargin:'0px 0px -60px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+
+</body>
+</html>
