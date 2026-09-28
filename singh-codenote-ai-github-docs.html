@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeNote.ai: A GitHub-Integrated Note-Taking and Automated Documentation System for Developers — IJACMI</title>
+<meta name="description" content="CodeNote.ai: A GitHub-Integrated Note-Taking and Automated Documentation System for Developers — IJACMI, Volume 1, Issue 1 (2026), pp. 19-28.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32.png">
+<link rel="apple-touch-icon" href="logo/favicon-180.png">
+<meta name="citation_title" content="CodeNote.ai: A GitHub-Integrated Note-Taking and Automated Documentation System for Developers">
+<meta name="citation_author" content="Satyam Singh">
+<meta name="citation_author" content="Vandana Sharma">
+<meta name="citation_author" content="Dhawal Beohar">
+<meta name="citation_publication_date" content="2026/09">
+<meta name="citation_journal_title" content="International Journal of Advanced Computing and Machine Intelligence">
+<meta name="citation_volume" content="1">
+<meta name="citation_issue" content="1">
+<meta name="citation_firstpage" content="19">
+<meta name="citation_lastpage" content="28">
+<meta name="citation_doi" content="10.5281/zenodo.22972522">
+<meta name="citation_pdf_url" content="https://www.ijacmi.org/articles/IJACMI-V1-I1-singh-codenote-ai-github-docs.pdf">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a href="index.html" class="mark"><img src="logo/logo-mark.svg" alt="" width="26" height="26">IJACMI</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cfp.html">Call for Papers</a>
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html" aria-current="page">Archives</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="banner">
+  <div class="wrap">
+    <p class="bk">Volume 1 &middot; Issue 1 &middot; Research Article &middot; pp. 19-28</p>
+    <h1>CodeNote.ai: A GitHub-Integrated Note-Taking and Automated Documentation System for Developers</h1>
+    <p class="sub">Satyam Singh, Vandana Sharma, Dhawal Beohar</p>
+  </div>
+</header>
+
+<section class="record">
+  <div class="wrap">
+    <h2>Article record</h2>
+    <dl class="rec">
+      <dt>authors</dt>
+      <dd>Satyam Singh<sup>1</sup>*, Vandana Sharma<sup>1</sup>, Dhawal Beohar<sup>2</sup></dd>
+
+      <dt>affiliations</dt>
+      <dd><sup>1</sup> ABES Engineering College, Dept of CSE, Ghaziabad, India<br><sup>2</sup> Department of Computer Science, City St George's, University of London, United Kingdom</dd>
+
+      <dt>corresponding author</dt>
+      <dd>Satyam Singh &mdash; <a href="mailto:satyam.singh@abes.ac.in">satyam.singh@abes.ac.in</a></dd>
+
+      <dt>pages</dt>
+      <dd>19-28</dd>
+
+      <dt>doi</dt>
+      <dd><a href="https://doi.org/10.5281/zenodo.22972522" rel="noopener">10.5281/zenodo.22972522</a></dd>
+
+      <dt>received</dt>
+      <dd>25 August 2026</dd>
+
+      <dt>revised</dt>
+      <dd>18 September 2026</dd>
+
+      <dt>accepted</dt>
+      <dd>24 September 2026</dd>
+
+      <dt>published</dt>
+      <dd>26 September 2026</dd>
+
+      <dt>keywords</dt>
+      <dd>note-taking application; GitHub integration; automated documentation; Abstract Syntax Tree; code comprehension; developer productivity tools</dd>
+
+      <dt>licence</dt>
+      <dd>CC BY 4.0 &mdash; authors retain copyright in full</dd>
+    </dl>
+  </div>
+</section>
+
+<main>
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Abstract</span>
+      <p class="dropcap">Maintaining clear, up-to-date documentation is one of the most persistent challenges in software development, particularly in fast-moving, open-source codebases touched by many contributors over time. Developers frequently lose the context behind their own past changes and struggle to understand contributions made by others, while existing tools are ill-suited to bridge this gap: general-purpose note-taking applications such as Notion and Evernote are disconnected from source-code repositories, and code-documentation generators such as Javadoc and Doxygen are language-specific and limited to static, comment-derived output. This paper presents CodeNote.ai, a GitHub-integrated note-taking and documentation platform designed specifically for developers. The system combines repository fetching, Abstract Syntax Tree (AST)-based code analysis, and template-driven automated documentation generation with the ability to attach contextual notes directly to specific files and code snippets. A React, Node.js, Express.js, and MongoDB stack implements repository ingestion, change tracking, and documentation generation, with structured JSON summaries designed to be consumable by downstream AI agents. We describe the system architecture, the engineering challenges encountered during implementation. We present an evaluation of documentation accuracy comparing AST-based analysis against a non-AST baseline on selected open-source repositories, where the AST-enhanced pipeline achieves up to 85% accuracy in structural context retrieval, outperforming the non-AST baseline.</p>
+    </div>
+  </section>
+
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">How to cite</span>
+      <div class="note">
+        <p>Satyam Singh, Vandana Sharma, Dhawal Beohar (2026). CodeNote.ai: A GitHub-Integrated Note-Taking and Automated Documentation System for Developers. International Journal of Advanced Computing and Machine Intelligence (IJACMI), 1(1), pp. 19-28. DOI: 10.5281/zenodo.22972522</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Read the article</span>
+      <div class="linkgrid">
+        <a class="linkcard" href="articles/IJACMI-V1-I1-singh-codenote-ai-github-docs.pdf">
+          <h3>Download PDF</h3>
+          <p>Full text of the article, typeset and paginated as published.</p>
+        </a>
+        <a class="linkcard" href="https://doi.org/10.5281/zenodo.22972522" rel="noopener">
+          <h3>Resolve the DOI</h3>
+          <p>Permanent identifier record for this article on Zenodo.</p>
+        </a>
+        <a class="linkcard" href="archives.html">
+          <h3>Back to Archives</h3>
+          <p>All articles in Volume 1, Issue 1.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footnav">
+      <a href="cfp.html">Call for Papers</a>
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="fmark">IJACMI</p>
+    <p>
+      International Journal of Advanced Computing and Machine Intelligence<br>
+      Published by WhiteField Academic Press, an imprint of Whitefield Research
+      and Innovation, Jabalpur, Madhya Pradesh, India<br>
+      Content licensed <a href="https://creativecommons.org/licenses/by/4.0/"
+      rel="noopener">CC BY 4.0</a> &middot; Authors retain copyright
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in');});return;
+  }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{rootMargin:'0px 0px -60px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+
+</body>
+</html>
