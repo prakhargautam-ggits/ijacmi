@@ -37,7 +37,7 @@ a:hover{border-bottom-color:var(--oxblood);}
 /* ---------- top bar ---------- */
 .topbar{background:var(--oxblood-deep);position:sticky;top:0;z-index:30;}
 .topbar-in{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;padding:.7rem 0;flex-wrap:wrap;}
-.topbar .mark{display:inline-flex;align-items:center;gap:.5rem;
+.topbar .mark{
   font-family:"Bodoni Moda",Didot,serif;font-weight:700;
   font-size:1.05rem;letter-spacing:.1em;color:var(--brass-lt);border:none;
 }
@@ -51,7 +51,6 @@ a:hover{border-bottom-color:var(--oxblood);}
 .topbar nav a[aria-current="page"]{color:var(--brass);border-bottom:2px solid var(--brass);}
 
 /* ---------- full masthead (home only) ---------- */
-.mh-mark{display:block;margin:0 auto 1.4rem;}
 .masthead{
   background:var(--oxblood);
   background-image:
@@ -174,10 +173,6 @@ a:hover{border-bottom-color:var(--oxblood);}
 }
 .card .nm{font-weight:600;font-size:1.02rem;display:block;}
 .card .af{color:var(--muted);font-size:.9rem;display:block;margin-top:.2rem;}
-.card .ad{
-  color:var(--muted);font-size:.83rem;line-height:1.55;display:block;
-  margin-top:.55rem;padding-top:.55rem;border-top:1px solid var(--rule);
-}
 .card .em{font-family:"IBM Plex Mono",monospace;font-size:.76rem;color:var(--brass-dp);display:block;margin-top:.45rem;}
 .card.lead{border-left-color:var(--brass);background:var(--paper-2);}
 
@@ -274,8 +269,7 @@ footer a{color:var(--brass-lt);border-bottom-color:rgba(231,206,122,.35);}
 /* ---------- responsive ---------- */
 @media (max-width:640px){
   body{font-size:16px;}
-  .mh-mark{display:block;margin:0 auto 1.4rem;}
-.masthead{padding:2.75rem 0 2.25rem;}
+  .masthead{padding:2.75rem 0 2.25rem;}
   .mh-kicker{letter-spacing:.2em;margin-bottom:1.3rem;}
   .mh-small{letter-spacing:.18em;}
   .mh-meta{letter-spacing:.12em;font-size:.68rem;}
