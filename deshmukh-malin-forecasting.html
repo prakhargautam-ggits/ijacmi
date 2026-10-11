@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Missingness-Aware Linear Forecasting for Long-Term Multivariate Time Series with Incomplete Inputs — IJACMI</title>
+<meta name="description" content="Missingness-Aware Linear Forecasting for Long-Term Multivariate Time Series with Incomplete Inputs — IJACMI, Volume 1, Issue 1 (2026), pp. 68-81.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="citation_title" content="Missingness-Aware Linear Forecasting for Long-Term Multivariate Time Series with Incomplete Inputs">
+<meta name="citation_author" content="Rohan Deshmukh">
+<meta name="citation_author" content="Arvind Kulkarni">
+<meta name="citation_author" content="Mohd Faizal Ibrahim">
+<meta name="citation_publication_date" content="2026/09">
+<meta name="citation_journal_title" content="International Journal of Advanced Computing and Machine Intelligence">
+<meta name="citation_volume" content="1">
+<meta name="citation_issue" content="1">
+<meta name="citation_firstpage" content="68">
+<meta name="citation_lastpage" content="81">
+<meta name="citation_doi" content="10.5281/zenodo.23292852">
+<meta name="citation_pdf_url" content="https://www.ijacmi.org/articles/IJACMI-V1-I1-deshmukh-malin-forecasting.pdf">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a href="index.html" class="mark">IJACMI</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html" aria-current="page">Archives</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="banner">
+  <div class="wrap">
+    <p class="bk">Volume 1 &middot; Issue 1 &middot; Research Article &middot; pp. 68-81</p>
+    <h1>Missingness-Aware Linear Forecasting for Long-Term Multivariate Time Series with Incomplete Inputs</h1>
+    <p class="sub">Rohan Deshmukh, Arvind Kulkarni, Mohd Faizal Ibrahim</p>
+  </div>
+</header>
+
+<section class="record">
+  <div class="wrap">
+    <h2>Article record</h2>
+    <dl class="rec">
+      <dt>authors</dt>
+      <dd>Rohan Deshmukh<sup>1</sup>*, Arvind Kulkarni<sup>2</sup>, Mohd Faizal Ibrahim<sup>3</sup></dd>
+
+      <dt>affiliations</dt>
+      <dd><sup>1</sup> School of Computing Science and Engineering (Research Scholar), VIT Bhopal University, Kothri Kalan, Sehore, Madhya Pradesh, India<br><sup>2</sup> School of Computing Science and Engineering, VIT Bhopal University, Kothri Kalan, Sehore, Madhya Pradesh, India<br><sup>3</sup> Faculty of Computing and Informatics, Multimedia University (MMU), Cyberjaya, Selangor, Malaysia</dd>
+
+      <dt>corresponding author</dt>
+      <dd>Rohan Deshmukh &mdash; <a href="mailto:rohan.deshmukh2024@vitbhopal.ac.in">rohan.deshmukh2024@vitbhopal.ac.in</a></dd>
+
+      <dt>pages</dt>
+      <dd>68-81</dd>
+
+      <dt>doi</dt>
+      <dd><a href="https://doi.org/10.5281/zenodo.23292852" rel="noopener">10.5281/zenodo.23292852</a></dd>
+
+      <dt>received</dt>
+      <dd>18 July 2026</dd>
+
+      <dt>revised</dt>
+      <dd>26 August 2026</dd>
+
+      <dt>accepted</dt>
+      <dd>21 September 2026</dd>
+
+      <dt>published</dt>
+      <dd>26 September 2026</dd>
+
+      <dt>keywords</dt>
+      <dd>time-series forecasting; missing data; linear models; robustness; instance normalisation; data augmentation</dd>
+
+      <dt>licence</dt>
+      <dd>CC BY 4.0 &mdash; authors retain copyright in full</dd>
+    </dl>
+  </div>
+</section>
+
+<main>
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Abstract</span>
+      <p class="dropcap">Linear models are strong and inexpensive baselines for long-term time-series forecasting, but they are usually evaluated on complete input windows, whereas deployed sensor streams contain isolated dropouts and multi-hour outages. This paper examines how standard linear forecasters degrade when their inputs are incomplete and proposes MALin, a missingness-aware linear forecaster that adds three lightweight elements to a RevIN-linear model: instance normalisation computed from observed entries only, a linear branch driven by the missingness mask, and training on windows corrupted with random point and block missingness. MALin and seven baselines (naive repeat, ridge regression, DLinear with zero filling and with interpolation, NLinear, RLinear, and RLinear with missingness-augmented training) were evaluated on the ETTh1, ETTh2, and ETTm1 datasets at horizons of 96 to 720 steps, under point and block missingness at rates of 10–70%, with identical fixed test masks for all models. Interpolation made point missingness largely harmless, but 50% block missingness still increased the MSE of interpolated DLinear and RLinear by 30% and 33% on average. MALin reduced the error under 30–70% block missingness by 3.8% on average relative to RLinear and by up to 9.5% on ETTm1, without a systematic loss on complete inputs. Diebold–Mariano tests with Holm correction found MALin significantly better than RLinear in 24 of 48 block-missingness settings and significantly worse in none of the 108 settings tested. The gains were concentrated on ETTh1 and ETTm1, while MALin was slightly but not significantly worse on ETTh2. An ablation showed that missingness-augmented training and observed-only normalisation account for most of the improvement, whereas the mask branch helps only when gaps are zero-filled.</p>
+    </div>
+  </section>
+
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">How to cite</span>
+      <div class="note">
+        <p>Rohan Deshmukh, Arvind Kulkarni, Mohd Faizal Ibrahim (2026). Missingness-Aware Linear Forecasting for Long-Term Multivariate Time Series with Incomplete Inputs. International Journal of Advanced Computing and Machine Intelligence (IJACMI), 1(1), pp. 68-81. DOI: 10.5281/zenodo.23292852</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec fade">
+    <div class="wrap">
+      <span class="sec-tag">Read the article</span>
+      <div class="linkgrid">
+        <a class="linkcard" href="articles/IJACMI-V1-I1-deshmukh-malin-forecasting.pdf">
+          <h3>Download PDF</h3>
+          <p>Full text of the article, typeset and paginated as published.</p>
+        </a>
+        <a class="linkcard" href="https://doi.org/10.5281/zenodo.23292852" rel="noopener">
+          <h3>Resolve the DOI</h3>
+          <p>Permanent identifier record for this article on Zenodo.</p>
+        </a>
+        <a class="linkcard" href="archives.html">
+          <h3>Back to Archives</h3>
+          <p>All articles in Volume 1, Issue 1.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footnav">
+      <a href="about.html">About</a>
+      <a href="board.html">Editorial Board</a>
+      <a href="authors.html">For Authors</a>
+      <a href="review.html">Peer Review</a>
+      <a href="policies.html">Policies</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="fmark">IJACMI</p>
+    <p>
+      International Journal of Advanced Computing and Machine Intelligence<br>
+      Published by WhiteField Academic Press, an imprint of Whitefield Research
+      and Innovation, Noida, India<br>
+      Content licensed <a href="https://creativecommons.org/licenses/by/4.0/"
+      rel="noopener">CC BY 4.0</a> &middot; Authors retain copyright<br><br>
+      <strong style="color: #E7CE7A;">For any queries:</strong> <a href="mailto:editor@ijacmi.org">editor@ijacmi.org</a> | <a href="mailto:whitefieldresearch@gmail.com">whitefieldresearch@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in');});return;
+  }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{rootMargin:'0px 0px -60px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+
+</body>
+</html>
